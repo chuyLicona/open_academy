@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+          <record id="course01" model="open_academy.course">
+            <field name="title">Industria del Software</field>
+            <field name="description">...</field>
+          </record>
+          <record id="course02" model="open_academy.course">
+            <field name="title">Intro a Odoo</field>
+            <field name="description">...</field>
+          </record>          
+    </data>
+</odoo>    
