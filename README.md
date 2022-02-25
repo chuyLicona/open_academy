@@ -1,8 +1,8 @@
 # open_academy
 Tarea Industria
 
-Información del Modulo creado
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/89970894/155602385-ea8d5a2b-0f5a-425e-98a7-edaa0da42c4b.png">
+Información del Modulo creado con Scaffold y un modelo Courses hecho en clase.
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/89970894/155629422-7b144d76-50e0-418c-af5e-37de69e0669c.png">
 
 
 Imagen Menu con action list
