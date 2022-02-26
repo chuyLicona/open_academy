@@ -6,9 +6,21 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record model="ir.ui.view" id="open_academy.list">
+             <field name="name">lista de cursos</field>
+              <field name="model">open_academy.course</field>
+              <field name="arch" type="xml">
+                   <tree>
+                       <field name="title"/>
+                         <field name="description"/>
+                    </tree>
+             </field>
+        </record>        
+
         <menuitem id="menu_open_academy_main" name="Open Academy" sequence="10"/>
         <menuitem id="menu_courses" parent="menu_open_academy_main" name="Courses" sequence="10" action="action_list_courses"/>
 
+        
 
     </data>
 </odoo>    
