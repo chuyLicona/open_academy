@@ -10,12 +10,30 @@
              <field name="name">lista de cursos</field>
               <field name="model">open_academy.course</field>
               <field name="arch" type="xml">
-                   <tree>
+                   <form>
                        <field name="title"/>
                          <field name="description"/>
-                    </tree>
+                    </form>
              </field>
-        </record>        
+        </record>      
+
+        <record id="open_academy.course_view_search" model="ir.ui.view">
+            <field name="name">open_academy.course.view.search</field>
+            <field name="model">open_academy.course</field>
+            <field name="arch" type="xml">
+                <search string="Search Description">
+                    <!-- Add your fields here -->
+                    <field name="title"/>
+                    <field name="description"/>
+                    
+                    <filter name="my_courses" string="Mis cursos" domain="[('title', '=', description)]"/>
+                    <group string="Agrupar por">
+                        <filter name="title" string="titulo" context="{'group_by': 'title'}"/>
+                    </group>
+                    
+                </search>
+            </field>
+        </record>  
 
         <menuitem id="menu_open_academy_main" name="Open Academy" sequence="10"/>
         <menuitem id="menu_courses" parent="menu_open_academy_main" name="Courses" sequence="10" action="action_list_courses"/>
